@@ -9,4 +9,27 @@ This is a plugin for CakePHP to minify the HTML output.
 
 ### Installation:
 
-Copy the project in the folder Plugin/MinifyHtml of your CakePHP application and add  public $helpers = array("MinifyHtml.MinifyHtml") to your AppController.
+_[GIT Submodule]_
+
+In your app directory (`app/Plugin`) type:
+
+```bash
+git submodule add git://github.com/absolutholz/cakephp-minifyhtml-plugin.git app/Plugin/MinifyHtml
+git submodule init
+git submodule update
+```
+
+_[GIT Clone]_
+
+In your plugin directory (`app/Plugin` or `plugins`) type:
+
+```bash
+git clone https://github.com/absolutholz/cakephp-minifyhtml-plugin.git Markdown
+```
+
+## Usage
+
+```php
+// in app/Controller/AppController.php
+public $helpers = array('MinifyHtml.MinifyHtml');
+```
